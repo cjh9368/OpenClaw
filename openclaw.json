@@ -199,6 +199,13 @@
         "model": "bailian/glm-5"
       },
       {
+        "id": "searcher",
+        "name": "searcher",
+        "workspace": "/home/admin/.openclaw/workspace-searcher",
+        "agentDir": "/home/admin/.openclaw/agents/searcher/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
         "id": "jwang",
         "name": "jwang",
         "workspace": "/home/admin/.openclaw/workspace-jwang",
@@ -234,6 +241,9 @@
         "jcheng": {
           "botToken": "8350376425:AAFBBSJv75kWCcKaKT9Cwz7zHPldS0QdU88"
         },
+        "searcher": {
+          "botToken": "8703278149:AAFXQy6MfTrY9EQfMeh4hEMcgkiw0QKgeyo"
+        },
         "jwang": {
           "botToken": "8703247816:AAFHSn9IzbFY7UGpCZ6SS3b0C0AoZhai-pg"
         }
@@ -255,7 +265,8 @@
         "accountId": "jcheng"
       }
     },
-    { "agentId": "jwang",    "match": { "channel": "telegram", "accountId": "jwang" } }
+    { "agentId": "jwang",    "match": { "channel": "telegram", "accountId": "jwang" } },
+    { "agentId": "searcher",    "match": { "channel": "telegram", "accountId": "searcher" } }
   ],
   "gateway": {
     "port": 18789,
