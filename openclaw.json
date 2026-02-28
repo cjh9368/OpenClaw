@@ -231,6 +231,19 @@
       "enabled": true,
       "dmPolicy": "pairing",
       "groupPolicy": "open",
+      "groups": {
+        "*": {
+          "requireMention": false   
+        },
+        "-5200116348": {           
+          "requireMention": false,
+          "enabled": true           
+        },
+        "-5111957637": {            
+          "requireMention": false,
+          "enabled": true
+        }
+      },
       "streaming": "off",
       "accounts": {
         "default": {
