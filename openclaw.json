@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.24",
+    "lastTouchedAt": "2026-02-27T09:53:22.354Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-26T10:33:50.910Z",
+    "lastRunVersion": "2026.2.24",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "bailian": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "apiKey": "sk-sp-f932878fc12e4d9e9a60eb2b7a892eb2",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-2026-01-23",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "glm-5",
+            "name": "glm-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384
+          },
+          {
+            "id": "glm-4.7",
+            "name": "glm-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "bailian/qwen3.5-plus",
+        "fallbacks": [
+          "bailian/qwen3-max-2026-01-23",
+          "bailian/qwen3-coder-next",
+          "bailian/qwen3-coder-plus",
+          "bailian/MiniMax-M2.5",
+          "bailian/glm-5",
+          "bailian/glm-4.7",
+          "bailian/kimi-k2.5"
+        ]
+      },
+      "models": {
+        "bailian/qwen3.5-plus": {},
+        "bailian/qwen3-max-2026-01-23": {},
+        "bailian/qwen3-coder-next": {},
+        "bailian/qwen3-coder-plus": {},
+        "bailian/MiniMax-M2.5": {},
+        "bailian/glm-5": {},
+        "bailian/glm-4.7": {},
+        "bailian/kimi-k2.5": {}
+      },
+      "workspace": "/home/admin/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "name": "main",
+        "workspace": "/home/admin/.openclaw/workspace",
+        "agentDir": "/home/admin/.openclaw/agents/main/agent"
+      },
+      {
+        "id": "jcheng",
+        "name": "jcheng",
+        "workspace": "/home/admin/.openclaw/workspace-jcheng",
+        "agentDir": "/home/admin/.openclaw/agents/jcheng/agent",
+        "model": "bailian/glm-5"
+      },
+      {
+        "id": "jwang",
+        "name": "jwang",
+        "workspace": "/home/admin/.openclaw/workspace-jwang",
+        "agentDir": "/home/admin/.openclaw/agents/jwang/agent",
+        "model": "bailian/qwen3.5-plus"
+      }
+    ]
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8350376425:AAFBBSJv75kWCcKaKT9Cwz7zHPldS0QdU88",
+      "groupPolicy": "allowlist",
+      "streaming": "off",
+      "accounts": {
+        "default": {
+          "botToken": "8350376425:AAFBBSJv75kWCcKaKT9Cwz7zHPldS0QdU88",
+          "dmPolicy": "pairing"
+        },
+        "jcheng": {
+          "botToken": "8350376425:AAFBBSJv75kWCcKaKT9Cwz7zHPldS0QdU88"
+        },
+        "jwang": {
+          "botToken": "8703247816:AAFHSn9IzbFY7UGpCZ6SS3b0C0AoZhai-pg"
+        }
+      }
+    },
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a915bc24fdf8dcb0",
+      "appSecret": "AgbtugMlzDLSYjE5n9XewgTTNOeAmumv",
+      "domain": "feishu",
+      "groupPolicy": "open"
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "jcheng",
+      "match": {
+        "channel": "telegram",
+        "accountId": "jcheng"
+      }
+    },
+    { "agentId": "jwang",    "match": { "channel": "telegram", "accountId": "jwang" } }
+  ],
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "437e78b5c8b4bf16f553526ba35600610441b331dacd7424"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "calendar.add",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": [
+        "/home/admin/.openclaw"
+      ]
+    },
+    "entries": {
+      "feishu": {
+        "enabled": false
+      },
+      "telegram": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "feishu": {
+        "source": "npm",
+        "spec": "@m1heng-clawd/feishu",
+        "installPath": "/home/admin/.openclaw/extensions/feishu",
+        "version": "0.1.11",
+        "resolvedName": "@m1heng-clawd/feishu",
+        "resolvedVersion": "0.1.11",
+        "resolvedSpec": "@m1heng-clawd/feishu@0.1.11",
+        "integrity": "sha512-VG9Ud74AzjFOvTHcThB/HcKV9emg21E3OMOFGVAtmXhlAsA9BhTkFknr9CjhwYiFV8SAEdTQqD7cVG9UWm2r7A==",
+        "shasum": "2e34dd676106339dfa015e21015bf47b63e69801",
+        "resolvedAt": "2026-02-25T13:38:45.139Z",
+        "installedAt": "2026-02-25T13:39:49.616Z"
+      }
+    }
+  }
+}
