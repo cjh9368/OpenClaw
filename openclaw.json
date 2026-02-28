@@ -266,7 +266,7 @@
       }
     },
     { "agentId": "jwang",    "match": { "channel": "telegram", "accountId": "jwang" } },
-    { "agentId": "searcher",    "match": { "channel": "telegram", "accountId": "searcher" } }
+    { "agentId": "searcher",    "match": { "channel": "telegram", "accountId": "searcher", "mention": "@searcher" } }
   ],
   "gateway": {
     "port": 18789,
