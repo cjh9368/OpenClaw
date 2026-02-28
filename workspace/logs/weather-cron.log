@@ -1,0 +1,8 @@
+/home/admin/.openclaw/workspace/scripts/send-weather-telegram.sh: line 24: openclaw: command not found
+❌ 发送失败
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: feishu (/home/admin/.openclaw/extensions/feishu/index.ts). Set plugins.allow to explicit trusted ids.
+[telegram] autoSelectFamily=true (default-node22)
+[telegram] global undici dispatcher autoSelectFamily=true
+[telegram] dnsResultOrder=ipv4first (default-node22)
+✅ Sent via Telegram. Message ID: 504
+✅ 天气报告已发送
