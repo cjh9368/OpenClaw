@@ -230,8 +230,7 @@
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
-      "botToken": "8350376425:AAFBBSJv75kWCcKaKT9Cwz7zHPldS0QdU88",
-      "groupPolicy": "allowlist",
+      "groupPolicy": "open",
       "streaming": "off",
       "accounts": {
         "default": {
