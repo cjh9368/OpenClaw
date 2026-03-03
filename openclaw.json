@@ -206,6 +206,55 @@
         "model": "bailian/kimi-k2.5"
       },
       {
+        "id": "wuxing",
+        "name": "wuxing",
+        "workspace": "/home/admin/.openclaw/workspace-wuxing",
+        "agentDir": "/home/admin/.openclaw/agents/wuxing/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
+        "id": "voice",
+        "name": "voice",
+        "workspace": "/home/admin/.openclaw/workspace-voice",
+        "agentDir": "/home/admin/.openclaw/agents/voice/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
+        "id": "jiandu",
+        "name": "jiandu",
+        "workspace": "/home/admin/.openclaw/workspace-jiandu",
+        "agentDir": "/home/admin/.openclaw/agents/jiandu/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
+        "id": "mingde",
+        "name": "mingde",
+        "workspace": "/home/admin/.openclaw/workspace-jiandu",
+        "agentDir": "/home/admin/.openclaw/agents/mingde/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
+        "id": "lingyun",
+        "name": "lingyun",
+        "workspace": "/home/admin/.openclaw/workspace-lingyun",
+        "agentDir": "/home/admin/.openclaw/agents/lingyun/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
+        "id": "zhiwei",
+        "name": "zhiwei",
+        "workspace": "/home/admin/.openclaw/workspace-zhiwei",
+        "agentDir": "/home/admin/.openclaw/agents/zhiwei/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
+        "id": "jianheng",
+        "name": "jianheng",
+        "workspace": "/home/admin/.openclaw/workspace-jianheng",
+        "agentDir": "/home/admin/.openclaw/agents/jianheng/agent",
+        "model": "bailian/kimi-k2.5"
+      },
+      {
         "id": "jwang",
         "name": "jwang",
         "workspace": "/home/admin/.openclaw/workspace-jwang",
@@ -256,6 +305,27 @@
         "searcher": {
           "botToken": "8703278149:AAFXQy6MfTrY9EQfMeh4hEMcgkiw0QKgeyo"
         },
+        "wuxing": {
+          "botToken": "8778797476:AAFZhbCWMdZYjc9Jr8cepvq6EmeX2gcJRYs"
+        },
+        "voice": {
+          "botToken": "8632372602:AAFYKgYg1PjV2ePzBQtEKzeGjxlFGDYR-TI"
+        },
+        "jiandu": {
+          "botToken": "8614464523:AAGPsk3vmyEHQX3K2qL5r7-JhUh9gVgvBJo"
+        },
+        "mingde": {
+          "botToken": "8731814606:AAHEPnVAtT0XUhORJSUj95rjV0PDt_AxLYw"
+        },
+        "lingyun": {
+          "botToken": "8377520157:AAFLMnyY3w8y6mgPOXvmMG3-VOYchZBoTNk"
+        },
+        "zhiwei": {
+          "botToken": ""
+        },
+        "jianheng": {
+          "botToken": ""
+        },
         "jwang": {
           "botToken": "8703247816:AAFHSn9IzbFY7UGpCZ6SS3b0C0AoZhai-pg"
         }
@@ -278,7 +348,14 @@
       }
     },
     { "agentId": "jwang",    "match": { "channel": "telegram", "accountId": "jwang" } },
-    { "agentId": "searcher",    "match": { "channel": "telegram", "accountId": "searcher" } }
+    { "agentId": "searcher",    "match": { "channel": "telegram", "accountId": "searcher" } },
+    { "agentId": "wuxing",    "match": { "channel": "telegram", "accountId": "wuxing" } },
+    { "agentId": "voice",    "match": { "channel": "telegram", "accountId": "voice" } },
+    { "agentId": "jiandu",    "match": { "channel": "telegram", "accountId": "jiandu" } },
+    { "agentId": "mingde",    "match": { "channel": "telegram", "accountId": "mingde" } },
+    { "agentId": "lingyun",    "match": { "channel": "telegram", "accountId": "lingyun" } },
+    { "agentId": "zhiwei",    "match": { "channel": "telegram", "accountId": "zhiwei" } },
+    { "agentId": "jianheng",    "match": { "channel": "telegram", "accountId": "jianheng" } }
   ],
   "gateway": {
     "port": 18789,
