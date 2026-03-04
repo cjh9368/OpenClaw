@@ -263,6 +263,12 @@
       }
     ]
   },
+  "tools": {
+    "agentToAgent": {
+      "enabled": true,
+      "allow": ["jcheng", "jianheng", "zhiwei", "lingyun", "zhiwei", "lingyun", "mingde", "jiandu", "voice", "wuxing", "searcher"] 
+    }
+  },
   "messages": {
     "ackReactionScope": "group-mentions"
   },
