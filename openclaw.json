@@ -288,7 +288,7 @@
       "groupPolicy": "open",
       "groups": {
         "*": {
-          "requireMention": false   
+          "requireMention": true
         },
         "-5200116348": {           
           "requireMention": false,
