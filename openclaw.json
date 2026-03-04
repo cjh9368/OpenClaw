@@ -196,6 +196,8 @@
         "name": "jcheng",
         "workspace": "/home/admin/.openclaw/workspace-jcheng",
         "agentDir": "/home/admin/.openclaw/agents/jcheng/agent",
+        "systemPrompt": "你是 jcheng, 可以协调其他专业 agents 完成任务。使用 sessions_list 查看可用 agents, 使用 sessions_send 向它们发送任务。",
+        "tools": ["sessions_send", "sessions_list", "memory_search", "read", "write"],
         "model": "bailian/glm-5"
       },
       {
@@ -229,7 +231,7 @@
       {
         "id": "mingde",
         "name": "mingde",
-        "workspace": "/home/admin/.openclaw/workspace-jiandu",
+        "workspace": "/home/admin/.openclaw/workspace-mingde",
         "agentDir": "/home/admin/.openclaw/agents/mingde/agent",
         "model": "bailian/kimi-k2.5"
       },
@@ -266,7 +268,7 @@
   "tools": {
     "agentToAgent": {
       "enabled": true,
-      "allow": ["jcheng", "jianheng", "zhiwei", "lingyun", "zhiwei", "lingyun", "mingde", "jiandu", "voice", "wuxing", "searcher"] 
+      "allow": ["main", "jcheng", "jianheng", "zhiwei", "lingyun", "mingde", "jiandu", "voice", "wuxing", "searcher", "jwang"]
     }
   },
   "messages": {
